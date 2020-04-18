@@ -32,7 +32,7 @@ public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.title.setText(tasks.get(position).getTitleTask());
-        holder.title.setEnabled(tasks.get(position).getCheck());
+        holder.title.setEnabled(tasks.get(position).getCheck()); //TODO Corregir
     }
 
     @Override

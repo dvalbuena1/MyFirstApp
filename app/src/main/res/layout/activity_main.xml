@@ -26,36 +26,30 @@
 
     </LinearLayout>
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ourTask"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="380dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp">
+        android:layout_marginRight="16dp"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="280dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <TextView
-        android:id="@+id/endPage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="No more tasks"
-        android:textAlignment="center"
-        android:textColor="#5D5F5C"
-        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:background="#FFF"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_gravity="bottom"
             android:layout_marginBottom="16dp"
+            android:background="#FFF"
             android:orientation="vertical">
 
 
@@ -71,11 +65,12 @@
                     android:orientation="vertical">
 
                     <EditText
+                        android:id="@+id/inputText"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
+                        android:layout_margin="8dp"
                         android:hint="I want to..."
-                        android:inputType="text"
-                        android:layout_margin="8dp"/>
+                        android:inputType="text" />
 
                 </LinearLayout>
 
